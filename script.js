@@ -15,20 +15,34 @@ var sediciNumeriRandomUtente = inseritoreNumeriUtente(1, 100);
 // array con numeri random pc
 console.log(sediciNumeriRandomPc);
 // array con numeri utente
+inseritoreNumeriUtente();
 console.log(sediciNumeriRandomUtente);
+// messaggio
+inseritoreNumeriUtente();
+  if (messaggio == true){
+  console.log('Hai perso');
+} else {
+  console.log('Hai vinto');
+}
+
 
 
 
 // CHIEDERE ALL'UTENTE DI INSERIRE UN NUMERO TRA 1 E 100 UNO ALLA VOLTA
 
-function generatoreAutomatico(min, max) {
-  var numeroUtente;
-
-  for (var i = 1; i <= 16; i++) {
-    numeroUtente = prompt('inserire un numero tra 1 e 100');
-    numeriUtente.push(numeroUtente);
+function inseritoreNumeriUtente(min, max) {
+  var numeriUtente = [];
+  var messaggio = false;
+  var i = 1;
+  while ( i <= 16) {
+    var numeroUtente = prompt('inserire un numero tra 1 e 100');
+    i++
   }
-  return numeriUtente;
+  while (sediciNumeriRandomPc.includes(numeroUtente) && numeriUtente=<16 ){
+    numeriUtente.push(numeroUtente);
+    }
+  if 
+  return massaggio;
 }
 
 
